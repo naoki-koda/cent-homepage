@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Footer from "./ui/Footer";
+import Header from "./ui/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +29,35 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Header />
+          {children}
+        <Footer
+          company={{
+            name: "C-ENT Inc.",
+            legalName: "株式会社 C-ENT",
+            address: "〒000-0000 愛知県名古屋市◯◯1-2-3",
+            phone: "09017241090",
+            email: "info@c-ent.jp",
+          }}
+          nav={[
+            {
+              title: "企業情報",
+              items: [
+                { href: "/about", label: "会社概要" },
+                { href: "/message", label: "トップメッセージ" },
+                { href: "/access", label: "アクセス" },
+              ],
+            },
+            {
+              title: "サポート",
+              items: [
+                { href: "/contact", label: "お問い合わせ" },
+                { href: "/faq", label: "FAQ" },
+                { href: "/recruit", label: "採用情報" },
+              ],
+            },
+          ]}
+        />
       </body>
     </html>
   );
