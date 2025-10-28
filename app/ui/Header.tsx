@@ -22,7 +22,7 @@ const NAV_ITEMS = [
     icon: HomeIcon,
   },
   {
-    href: '/business',
+    href: '/ He',
     label: '事業内容',
     subLabel: '事業内容',
     icon: PhotoIcon,
@@ -57,7 +57,7 @@ export default function Header() {
       >
         <div className="mx-auto flex h-full max-w-5xl items-center justify-between">
           <Link href="/" className="flex items-center gap-3 text-teal-950">
-            <Image src="/favicon.ico" alt="Site Icon" width={40} height={40} className="rounded-lg" />
+            <Image src="/c-ent.ico" alt="Site Icon" width={50} height={50} className="rounded-lg" />
                 <h1 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-gray-100 to-gray-200 bg-clip-text text-transparent">
                     C-ENT
                 </h1>
