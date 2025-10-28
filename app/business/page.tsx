@@ -37,22 +37,22 @@ export default function TabsPage() {
         <div className="mx-auto max-w-3xl rounded-xl bg-white p-8 shadow-sm">
 
           <Tabs defaultValue="recruit" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 bg-slate-100 rounded-lg">
+            <TabsList className="grid w-full grid-cols-3 bg-slate-100 rounded-lg mb-10">
               <TabsTrigger
                 value="recruit"
-                className="data-[state=active]:bg-white data-[state=active]:text-black"
+                className="py-4 text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
               >
                 採用支援事業
               </TabsTrigger>
               <TabsTrigger
                 value="webdesign"
-                className="data-[state=active]:bg-white data-[state=active]:text-black"
+                className="py-4 text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
               >
                 WEBデザイン事業
               </TabsTrigger>
               <TabsTrigger
                 value="sns"
-                className="data-[state=active]:bg-white data-[state=active]:text-black"
+                className="py-4 text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
               >
                 SNS運用代行事業
               </TabsTrigger>
