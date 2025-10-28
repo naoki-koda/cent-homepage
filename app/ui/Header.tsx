@@ -3,12 +3,12 @@
 import { Button } from "@/components/ui/button";
 import {
   Bars3Icon,
-  CurrencyDollarIcon,
+  BriefcaseIcon,
+  BuildingOfficeIcon,
   EnvelopeIcon,
   HomeIcon,
-  PencilSquareIcon,
-  PhotoIcon,
-  XMarkIcon,
+  UsersIcon,
+  XMarkIcon
 } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -22,22 +22,23 @@ const NAV_ITEMS = [
     icon: HomeIcon,
   },
   {
-    href: '/ He',
+    href: '/business',
     label: '事業内容',
     subLabel: '事業内容',
-    icon: PhotoIcon,
+    icon: BriefcaseIcon,
   },
   {
     href: '/about',
     label: '会社概要',
     subLabel: '会社概要',
-    icon: PencilSquareIcon,
+    icon: BuildingOfficeIcon,
   },
   {
     href: '/recruit',
     label: '採用について',
     subLabel: '採用について',
-    icon: CurrencyDollarIcon,
+    icon: UsersIcon
+,
   },
   {
     href: '/contact',
@@ -97,7 +98,7 @@ export default function Header() {
 
       {isMenuOpen && (
         <nav
-          className={`fixed inset-x-0 top-16 bottom-0 z-50 flex flex-col bg-gradient-to-br from-orange-400 to-sky-400 px-6 pb-12 pt-8 text-teal-950 md:hidden font-jp`}
+          className={`fixed inset-x-0 top-16 bottom-0 z-50 flex flex-col bg-gray-800 px-6 pb-12 pt-8 text-teal-950 md:hidden font-jp`}
         >
           <div className="mx-auto w-full max-w-sm flex-1 space-y-6 overflow-y-auto">
             <div className="flex items-center justify-between text-white">
@@ -112,15 +113,15 @@ export default function Header() {
                     className="group block rounded-3xl border border-white/20 bg-white/15 px-6 py-5 text-center text-teal-950 shadow-[0_20px_40px_-30px_rgba(15,23,42,0.45)] backdrop-blur transition hover:border-white/40 hover:bg-white/25 hover:text-white/90"
                   >
                     <div className="flex flex-col items-center gap-3">
-                      <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/70 text-teal-950 shadow-sm shadow-orange-200/40 transition group-hover:bg-white group-hover:text-orange-500">
+                      <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/70 text-teal-950 shadow-sm shadow-orange-200/40 transition group-hover:bg-white group-hover:text-gray-500">
                         <Icon className="h-6 w-6" />
                       </span>
                       <div className="space-y-1">
-                        <span className="block text-base font-semibold">{label}</span>
-                        <div className="mx-auto h-px w-14 bg-gradient-to-r from-orange-400 to-sky-400" />
-                        <span className="block text-xs tracking-wide text-slate-700 group-hover:text-white/80">
+                        <span className="block text-gray-100 font-semibold">{label}</span>
+                        <div className="mx-auto h-px w-14 bg-gradient-to-r from-gray-100 to-gray-400" />
+                        {/* <span className="block text-xs tracking-wide text-slate-700 group-hover:text-white/80">
                           {subLabel}
-                        </span>
+                        </span> */}
                       </div>
                     </div>
                   </Link>
