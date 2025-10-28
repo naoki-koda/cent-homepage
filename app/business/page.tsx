@@ -1,5 +1,6 @@
 'use client'
 
+
 import {
   Tabs,
   TabsContent,
@@ -7,8 +8,12 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 
 export default function TabsPage() {
+  // 現在のパスを取得
+  const searchParams = useSearchParams();
+  const tab: string | undefined = searchParams.get("tab") ?? undefined;
   return (
     <main className="font-jp">
       <section className="relative h-[80vh] w-full overflow-hidden mb-12">
@@ -34,25 +39,26 @@ export default function TabsPage() {
         </div>
       </section>
       <div>
+        <div>{tab}</div>
         <div className="mx-auto max-w-3xl rounded-xl bg-white p-8 shadow-sm">
 
-          <Tabs defaultValue="recruit" className="w-full">
+          <Tabs defaultValue={tab} className="w-full">
             <TabsList className="grid w-full grid-cols-3 bg-slate-100 rounded-lg mb-10">
               <TabsTrigger
                 value="recruit"
-                className="py-4 text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
+                className="py-4 text-sm md:text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
               >
                 採用支援事業
               </TabsTrigger>
               <TabsTrigger
                 value="webdesign"
-                className="py-4 text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
+                className="py-4 text-sm md:text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
               >
                 WEBデザイン事業
               </TabsTrigger>
               <TabsTrigger
                 value="sns"
-                className="py-4 text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
+                className="py-4 text-sm md:text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
               >
                 SNS運用代行事業
               </TabsTrigger>

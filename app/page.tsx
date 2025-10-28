@@ -51,7 +51,7 @@ export default function Home() {
             title="採用支援"
             description="求人原稿の最適化から媒体運用、RPO（採用業務代行）まで、一気通貫で支援します。"
             items={["求人原稿の作成", "求人広告運用", "RPO（採用業務代行）"]}
-            href="/service/recruit"
+            href="/business?tab=recruit"
             Icon={UsersIcon}
           />
 
@@ -61,7 +61,7 @@ export default function Home() {
             title="WEBデザイン"
             description="コーポレートサイトやLPを、情報設計とUIで成果につなげます。"
             items={["WEBエンジニアリング / WEBシステム", "WEBマーケティング"]}
-            href="/service/webdesign"
+            href="/business?tab=webdesign"
             Icon={ComputerDesktopIcon}
           />
 
@@ -71,7 +71,7 @@ export default function Home() {
             title="WEBデザインのスクール運営"
             description="実務直結のカリキュラムで即戦力を育成。法人研修にも対応します。"
             items={["WEBデザイン / WEBシステム", "3Dモデリング", "WEBマーケティング"]}
-            href="/service/school"
+            href="/business?tab=webdesign"
             Icon={AcademicCapIcon}
           />
 
@@ -81,7 +81,7 @@ export default function Home() {
             title="SNS運用代行"
             description="戦略設計からクリエイティブ作成、投稿運用、レポーティングまで一括支援。"
             items={["クリエイティブ作成", "投稿スケジュール設計", "運用・分析レポート"]}
-            href="/service/sns"
+            href="/business?tab=sns"
             Icon={MegaphoneIcon}
           />
         </div>

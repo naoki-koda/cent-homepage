@@ -22,7 +22,7 @@ const NAV_ITEMS = [
     icon: HomeIcon,
   },
   {
-    href: '/business',
+    href: '/business?tab=recruit',
     label: '事業内容',
     subLabel: '事業内容',
     icon: BriefcaseIcon,
