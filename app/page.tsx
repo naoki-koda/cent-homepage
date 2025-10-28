@@ -9,35 +9,35 @@ export default function Home() {
     <main className="font-jp">
       {/* Hero */}
       <section className="relative h-[80vh] w-full overflow-hidden">
-      {/* 背景画像 */}
-      <Image
-        src="/top_heroImage.webp"
-        alt="コーポレートサイトのヒーローイメージ"
-        fill
-        priority
-        className="object-cover object-center"
-      />
+        {/* 背景画像 */}
+        <Image
+          src="/top_heroImage.webp"
+          alt="コーポレートサイトのヒーローイメージ"
+          fill
+          priority
+          className="object-cover object-center"
+        />
 
-      {/* オーバーレイ（暗めフィルター） */}
-      <div className="absolute inset-0 bg-black/40" />
+        {/* オーバーレイ（暗めフィルター） */}
+        <div className="absolute inset-0 bg-black/40" />
 
-      {/* テキストコンテンツ */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-        <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">
-          「つながりが生まれる、未来への入り口。」
-        </h1>
-        <p className="mt-6 text-lg md:text-xl text-gray-200 max-w-2xl">
-          採用支援・Webデザイン・スクール運営を通じて、<br/>
-          ビジネスの未来を共に創造します。
-        </p>
-        <a
-          href="#contact"
-          className="mt-8 rounded-full bg-sky-500 px-8 py-3 text-lg font-semibold text-white hover:bg-sky-600 transition"
-        >
-          お問い合わせ
-        </a>
-      </div>
-    </section>
+        {/* テキストコンテンツ */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
+          <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">
+            「つながりが生まれる、未来への入り口。」
+          </h1>
+          <p className="mt-6 text-lg md:text-xl text-gray-200 max-w-2xl">
+            採用支援・Webデザイン・スクール運営を通じて、<br />
+            ビジネスの未来を共に創造します。
+          </p>
+          <a
+            href="#contact"
+            className="mt-8 rounded-full bg-[#19c8c6] px-8 py-3 text-lg font-semibold text-white hover:bg-cyan-600 transition"
+          >
+            お問い合わせ
+          </a>
+        </div>
+      </section>
 
       {/* Services */}
       <section className="mx-auto max-w-6xl px-4 py-14 md:py-12">
@@ -92,9 +92,9 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 py-14 md:py-8">
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-slate-900">ご支援の流れ</h2>
           <ol className="mt-8 grid gap-6 md:grid-cols-5 text-slate-700">
-            {["お問い合わせ","要件ヒアリング","ご提案・お見積り","実行・運用","レポート/改善"].map((step, i) => (
+            {["お問い合わせ", "要件ヒアリング", "ご提案・お見積り", "実行・運用", "レポート/改善"].map((step, i) => (
               <li key={step} className="rounded-xl border border-slate-200 bg-slate-50 p-4">
-                <span className="text-xs font-semibold text-sky-700">STEP {i+1}</span>
+                <span className="text-xs font-semibold text-sky-700">STEP {i + 1}</span>
                 <p className="mt-2 font-medium">{step}</p>
               </li>
             ))}
@@ -110,7 +110,7 @@ export default function Home() {
             具体的な課題が固まっていなくても大丈夫です。初回相談・簡易診断は無料です。
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Button asChild size="lg" className="text-md bg-white text-gray-900 hover:bg-slate-100">
+            <Button asChild size="lg" className="text-md bg-[#19c8c6] text-gray-900 hover:bg-cyan-600">
               <Link href="/contact">お問い合わせ</Link>
             </Button>
           </div>

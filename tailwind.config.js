@@ -11,6 +11,9 @@ module.exports = {
           "sans-serif",
         ],
       },
+      colors: {
+        brand: "#19c8c6", // ← 独自カラー（例：企業テーマカラーなど）
+      },
     },
   },
   plugins: [],

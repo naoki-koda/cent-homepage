@@ -1,11 +1,14 @@
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
+
 /* @import "tw-animate-css"; */
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-brand: #19c8c6; /* ← これで bg-brand / text-brand / border-brand が使える */
+  --font-jp: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
