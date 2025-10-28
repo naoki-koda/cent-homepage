@@ -1,6 +1,6 @@
 'use client'
 
-
+import { Suspense } from "react";
 import {
   Tabs,
   TabsContent,
@@ -11,6 +11,14 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 
 export default function TabsPage() {
+  return (
+    <Suspense fallback={<div className="flex justify-center py-20 text-slate-500">読み込み中...</div>}>
+      <BusinessTabs />
+    </Suspense>
+  );
+}
+
+function BusinessTabs() {
   // 現在のパスを取得
   const searchParams = useSearchParams();
   const tab: string | undefined = searchParams.get("tab") ?? undefined;
