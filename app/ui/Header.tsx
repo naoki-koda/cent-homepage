@@ -59,9 +59,10 @@ export default function Header() {
         <div className="mx-auto flex h-full max-w-5xl items-center justify-between">
           <Link href="/" className="flex items-center gap-3 text-teal-950">
             <Image src="/c-ent.ico" alt="Site Icon" width={50} height={50} className="rounded-lg" />
-                <h1 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-gray-100 to-gray-200 bg-clip-text text-transparent">
+                {/* <h1 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-gray-100 to-gray-200 bg-clip-text text-transparent">
                     C-ENT
-                </h1>
+                </h1> */}
+            <Image src="/logotext.svg" alt="Site Icon" width={100} height={100} />
           </Link>
           <nav className="hidden items-center gap-6 text-sm font-semibold text-gray-100 md:flex">
             {NAV_ITEMS.map(({ href, label }) => (

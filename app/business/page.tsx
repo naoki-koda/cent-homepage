@@ -39,7 +39,6 @@ export default function TabsPage() {
         </div>
       </section>
       <div>
-        <div>{tab}</div>
         <div className="mx-auto max-w-3xl rounded-xl bg-white p-8 shadow-sm">
 
           <Tabs defaultValue={tab} className="w-full">
