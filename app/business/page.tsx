@@ -59,9 +59,9 @@ function BusinessTabs() {
               </TabsTrigger>
               <TabsTrigger
                 value="webdesign"
-                className="py-4 text-sm md:text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
+                className="py-4 text-sm md:text-2xl font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
               >
-                WEBデザイン事業
+                WEB事業
               </TabsTrigger>
               <TabsTrigger
                 value="sns"
@@ -145,7 +145,7 @@ function BusinessTabs() {
             <TabsContent value="webdesign" className="mt-6 text-black space-y-4">
               {/* Hero セクション */}
               <section className="mb-12 text-left">
-                <h1 className="text-3xl font-bold text-black">WEBデザイン事業</h1>
+                <h1 className="text-3xl font-bold text-black">WEB事業</h1>
                 <p className="mt-3 text-slate-600">
                   ブランドの価値を「見える形」に。デザインとテクノロジーで、企業と顧客をつなぐWEBソリューションを提供します。
                 </p>
@@ -157,7 +157,7 @@ function BusinessTabs() {
                   伝わるデザインで、ブランドの魅力を最大化
                 </h2>
                 <p>
-                  当社のWEBデザイン事業では、単なる「見た目の美しさ」だけでなく、
+                  当社のWEB事業では、単なる「見た目の美しさ」だけでなく、
                   ブランドの想いや事業の強みを正確に伝える“機能するデザイン”を重視しています。
                   コーポレートサイトやランディングページ、ECサイトなど、目的に応じた最適な構成とUI/UXを設計します。
                 </p>

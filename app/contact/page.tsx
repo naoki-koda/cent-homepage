@@ -19,9 +19,9 @@ export default function Page() {
 
       <form className="mt-10 grid gap-8 text-sm text-slate-800">
         <fieldset className="grid gap-4">
-          <legend className="text-base font-semibold text-slate-900">
+          <span className="text-base font-semibold text-slate-900">
             お問い合わせ種別<span className="ml-2 text-xs text-red-600">必須</span>
-          </legend>
+          </span>
           <div className="grid gap-2 md:grid-cols-2">
             {inquiryTypes.map((type) => (
               <label

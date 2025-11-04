@@ -26,12 +26,12 @@ export default function Home() {
           <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">
             「つながりが生まれる、未来への入り口。」
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-gray-200 max-w-2xl">
+          <p className="mt-6 text-sm md:text-xl text-gray-200 max-w-2xl">
             採用支援・Webデザイン・スクール運営を通じて、<br />
             ビジネスの未来を共に創造します。
           </p>
           <a
-            href="#contact"
+            href="/contact"
             className="mt-8 rounded-full bg-[#19c8c6] px-8 py-3 text-lg font-semibold text-white hover:bg-cyan-600 transition"
           >
             お問い合わせ
@@ -68,7 +68,7 @@ export default function Home() {
           <ServiceCard
             imageSrc="/school.webp"
             imageAlt="WEBスクール運営のイメージ"
-            title="WEBデザインのスクール運営"
+            title="WEBスクール運営"
             description="実務直結のカリキュラムで即戦力を育成。法人研修にも対応します。"
             items={["WEBデザイン / WEBシステム", "3Dモデリング", "WEBマーケティング"]}
             href="/business?tab=webdesign"

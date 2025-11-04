@@ -30,11 +30,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-          {children}
+        {children}
         <Footer
           company={{
             name: "C-ENT Inc.",
-            legalName: "株式会社 C-ENT",
+            legalName: "株式会社 シーエント",
             address: "〒000-0000 愛知県名古屋市◯◯1-2-3",
             phone: "09017241090",
             email: "info@c-ent.jp",
