@@ -13,7 +13,7 @@ export default function Page() {
       <header>
         <h1 className="text-3xl font-semibold tracking-tight">お問い合わせ</h1>
         <p className="mt-4 text-sm text-slate-600">
-          下記フォームに必要事項をご入力のうえ送信してください。内容を確認のうえ、担当者よりご連絡いたします。
+          下記フォームに必要事項をご入力のうえ送信してください。<br />内容を確認のうえ、担当者よりご連絡いたします。
         </p>
       </header>
 
