@@ -24,7 +24,7 @@ export default function Home() {
         {/* テキストコンテンツ */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
           <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">
-            「つながりが生まれる、未来への入り口。」
+            「つながりが生まれる、<br />未来への入り口。」
           </h1>
           <p className="mt-6 text-sm md:text-xl text-gray-200 max-w-2xl">
             採用支援・Webデザイン・スクール運営を通じて、<br />
