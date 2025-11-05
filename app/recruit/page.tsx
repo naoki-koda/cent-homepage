@@ -91,7 +91,7 @@ export default function RecruitPage() {
                     {/* 外部リンクボタン（例：Indeed, Wantedly, Greenなど） */}
                     <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
                         <Link
-                            href="https://www.indeed.com/company/cent" // ← 採用ページURLを入れてください
+                            href="https://jp.indeed.com/m/viewjob?jk=112fded49eb175c7&from=serpJapan&prevUrl=http%3A%2F%2Fjp.indeed.com%2Fm%2Fjobs%3Fq%3D%25E3%2582%25B7%25E3%2583%25BC%25E3%2582%25A8%25E3%2583%25B3%25E3%2583%2588%26l%3D%26from%3DsearchOnSerp&mclk=default&xpse=SoAK67I3rpwhiNAxGT0LbzkdCdPP&xfps=3812cfd7-9d01-4a2e-bf0b-03b166e54f74&xkcb=SoB567M3rpwl2uga9T0KbzkdCdPP"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block bg-white text-sky-700 px-6 py-3 rounded-md font-semibold hover:bg-slate-100 transition"

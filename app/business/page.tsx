@@ -47,7 +47,7 @@ function BusinessTabs() {
         </div>
       </section>
       <div>
-        <div className="mx-auto max-w-3xl rounded-xl bg-white p-8 shadow-sm">
+        <div className="mx-auto max-w-5xl rounded-xl bg-white  sm:p-10 p-6 shadow-sm">
 
           <Tabs defaultValue={tab} className="w-full">
             <TabsList className="grid w-full grid-cols-3 bg-slate-100 rounded-lg mb-10">
@@ -59,7 +59,7 @@ function BusinessTabs() {
               </TabsTrigger>
               <TabsTrigger
                 value="webdesign"
-                className="py-4 text-sm md:text-2xl font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
+                className="py-4 text-xs md:text-2xl font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
               >
                 WEBデザイン事業
               </TabsTrigger>
