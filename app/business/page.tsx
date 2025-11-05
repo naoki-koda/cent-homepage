@@ -61,7 +61,7 @@ function BusinessTabs() {
                 value="webdesign"
                 className="py-4 text-sm md:text-2xl font-semibold data-[state=active]:bg-white data-[state=active]:text-black"
               >
-                WEB事業
+                WEBデザイン事業
               </TabsTrigger>
               <TabsTrigger
                 value="sns"
@@ -145,7 +145,7 @@ function BusinessTabs() {
             <TabsContent value="webdesign" className="mt-6 text-black space-y-4">
               {/* Hero セクション */}
               <section className="mb-12 text-left">
-                <h1 className="text-3xl font-bold text-black">WEB事業</h1>
+                <h1 className="text-3xl font-bold text-black">WEBデザイン事業</h1>
                 <p className="mt-3 text-slate-600">
                   ブランドの価値を「見える形」に。デザインとテクノロジーで、企業と顧客をつなぐWEBソリューションを提供します。
                 </p>
