@@ -14,7 +14,7 @@ export default function GreetingPage() {
     <main className="mx-auto max-w-5xl px-4 py-12 font-jp">
       {/* ページタイトル */}
       <header className="mb-8">
-        <p className="text-xs tracking-widest text-black uppercase">greetings</p>
+        <p id="message" className="text-xs tracking-widest text-black uppercase">greetings</p>
         <h1 className="mt-1 text-3xl font-bold tracking-tight text-black">ご挨拶</h1>
         <p className="mt-3 text-slate-600">
           本質を見極め、価値を創造し、社会に貢献する。
@@ -52,7 +52,25 @@ export default function GreetingPage() {
             priority
         />
         <div className="absolute inset-0 bg-black/10" />
-        </section>
+      </section>
+        <div className="bg-white shadow-md rounded-xl p-8 mt-16" id="access">
+            <h3 className="text-xl font-bold mb-6 text-center">アクセス</h3>
+
+            <div className="space-y-4 text-gray-800">
+
+            <p>
+                <span className="font-semibold">株式会社　シーエント</span>
+            </p>
+
+            <p>
+                <span className="font-semibold">所在地：</span>
+                〒4500002 愛知県名古屋市中村区名駅4丁目24番5号第2森ビル401
+            </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1199.4887960236294!2d136.88826821070535!3d35.16838456947625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376ded2d459ad%3A0x2fea5b5f58fb8bd4!2z44CSNDUwLTAwMDIg5oSb55-l55yM5ZCN5Y-k5bGL5biC5Lit5p2R5Yy65ZCN6aeF77yU5LiB55uu77yS77yU4oiS77yVIOesrO-8kuajruODk-ODqyA0MDE!5e0!3m2!1sja!2sjp!4v1763377400162!5m2!1sja!2sjp"
+                width="100%" height="350" style={{ border: 0 }} loading="lazy">
+                </iframe>
+            </div>
+        </div>
 
       {/* CTA */}
       <section

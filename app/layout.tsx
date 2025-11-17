@@ -65,8 +65,8 @@ export default function RootLayout({
               title: "企業情報",
               items: [
                 { href: "/about", label: "会社概要" },
-                { href: "/message", label: "トップメッセージ" },
-                { href: "/access", label: "アクセス" },
+                { href: "/about#message", label: "トップメッセージ" },
+                { href: "/about#access", label: "アクセス" },
               ],
             },
             {

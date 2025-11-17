@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
   const company = {
     name: "株式会社シーエント",
     // 決まり次第更新
-    address: "所在地：未定（決定次第、当ページでお知らせします）",
+    address: "〒4500002 愛知県名古屋市中村区名駅4丁目24番5号第2森ビル401",
     email: "info@c-ent.co.jp",
   };
 

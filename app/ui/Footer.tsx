@@ -1,5 +1,5 @@
 // components/site/Footer.tsx
-import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 type NavGroup = { title: string; items: { label: string; href: string }[] };
@@ -104,7 +104,7 @@ export default function Footer({ company, nav = [] }: FooterProps) {
                 プライバシーポリシー
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/terms" className="hover:text-sky-700 hover:underline underline-offset-4">
                 利用規約
               </Link>
@@ -113,7 +113,7 @@ export default function Footer({ company, nav = [] }: FooterProps) {
               <Link href="/legal" className="hover:text-sky-700 hover:underline underline-offset-4">
                 特定商取引法に基づく表記
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
