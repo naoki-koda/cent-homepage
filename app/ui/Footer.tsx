@@ -9,14 +9,15 @@ interface FooterProps {
   company: {
     name: string;
     legalName?: string;
-    address?: string;
+    address1?: string;
+    address2?: string;
     phone?: string;
     email?: string;
   };
   nav?: NavGroup[];
 }
 
-export default function Footer({ company, nav = []}: FooterProps) {
+export default function Footer({ company, nav = [] }: FooterProps) {
   const year = new Date().getFullYear();
 
   return (
@@ -27,14 +28,22 @@ export default function Footer({ company, nav = []}: FooterProps) {
           {/* 会社情報 */}
           <section aria-labelledby="footer-company" className="space-y-3 text-slate-700">
             <div>
-                <h2 id="footer-company" className="text-lg font-bold text-slate-900 tracking-tight">
+              <h2 id="footer-company" className="text-lg font-bold text-slate-900 tracking-tight">
                 {company.legalName ?? company.name}
-                </h2>
+              </h2>
             </div>
-            {company.address && (
+            {company.address1 && (
+              <ul className="flex items-start gap-2">
+                {/* <MapPinIcon className="mt-0.5 h-5 w-5 text-slate-500" /> */}
+                <li>{company.address1}</li>
+                {/*                 <li>{company.address2}</li> */}
+              </ul>
+            )}
+            {company.address1 && (
               <p className="flex items-start gap-2">
-                <MapPinIcon className="mt-0.5 h-5 w-5 text-slate-500" />
-                <span>{company.address}</span>
+                {/* <MapPinIcon className="mt-0.5 h-5 w-5 text-slate-500" /> */}
+                {/* <li>{company.address1}</li> */}
+                愛知県名古屋市中村区名駅4丁目24番5号<br />第2森ビル401
               </p>
             )}
             <ul className="space-y-2">
